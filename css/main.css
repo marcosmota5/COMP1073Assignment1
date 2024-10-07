@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffcc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left panel columns */
+.left-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.column img {
+    width: 50px;
+    height: 50px;
+}
+
+.column p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Right panel with buttons and speaker */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 20px;
+    background-color: #ffcc33;
+    border-radius: 10px;
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.color-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff5757;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#button2 {
+    background-color: #57a0ff;
+}
+
+#button3 {
+    background-color: #57ff57;
+}
+
+#button4 {
+    background-color: #ffd457;
+}
+
+#button5 {
+    background-color: #ff57d4;
+}
+
+/* Speaker section */
+.speaker-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.speaker {
+    width: 100px;
+    height: 100px;
+    background-color: #666;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #00cc66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#surprise {
+    background-color: #ff5757;
+}
+
+#playback {
+    background-color: #57a0ff;
+}
+
+.action-button:hover {
+    opacity: 0.9;
+}

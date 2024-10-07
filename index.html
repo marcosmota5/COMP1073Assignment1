@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+        COMP 1073 Assignment 1
+        Student Id: 200564426
+        Student Name: Marcos Oliveira Mota
+        Created on: 2024-10-06
+-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<!-- Page-level header -->
+	<header>
+		<nav>
+			<!-- Div that holds the logo and the company name. When clicked, it redirects to the home page -->
+			<div class="logo" onclick="window.location.href='index.html'">
+				<img src="images/favicon.png" alt="Logo">
+				<span class="company-name">See'N Say Story Maker</span>
+			</div>
+			<!-- Div that holds the options for the user to navigate through the website -->
+			<div class="options">
+				<a href="index.html"><span class="material-symbols-outlined">
+						home
+					</span>&nbsp;Home</a>
+				<a href="about.html"><span class="material-symbols-outlined">
+						info
+					</span>&nbsp;About</a>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<!-- Left panel with columns of images and text -->
+		<div class="left-panel">
+			<div class="column" id="col1">
+				<img src="images/picture1.png" alt="Picture 1">
+				<p>The turkey</p>
+				<img src="images/picture2.png" alt="Picture 2">
+				<p>Mom</p>
+				<img src="images/picture3.png" alt="Picture 3">
+				<p>Dad</p>
+				<img src="images/picture4.png" alt="Picture 4">
+				<p>The dog</p>
+				<img src="images/picture5.png" alt="Picture 5">
+				<p>My teacher</p>
+				<img src="images/picture6.png" alt="Picture 6">
+				<p>The elephant</p>
+				<img src="images/picture7.png" alt="Picture 7">
+				<p>The cat</p>
+			</div>
+			<div class="column" id="col2">
+				<img src="images/picture8.png" alt="Picture 8">
+				<p>sat on</p>
+				<img src="images/picture9.png" alt="Picture 9">
+				<p>ate</p>
+				<img src="images/picture10.png" alt="Picture 10">
+				<p>danced with</p>
+				<img src="images/picture11.png" alt="Picture 11">
+				<p>saw</p>
+				<img src="images/picture12.png" alt="Picture 12">
+				<p>doesn't like</p>
+				<img src="images/picture13.png" alt="Picture 13">
+				<p>kissed</p>
+			</div>
+			<div class="column" id="col3">
+				<img src="images/picture14.png" alt="Picture 14">
+				<p>a funny</p>
+				<img src="images/picture15.png" alt="Picture 15">
+				<p>a scary</p>
+				<img src="images/picture16.png" alt="Picture 16">
+				<p>a goofy</p>
+				<img src="images/picture17.png" alt="Picture 17">
+				<p>a slimy</p>
+				<img src="images/picture18.png" alt="Picture 18">
+				<p>a barking</p>
+				<img src="images/picture19.png" alt="Picture 19">
+				<p>a fat</p>
+			</div>
+			<div class="column" id="col4">
+				<img src="images/picture20.png" alt="Picture 20">
+				<p>goat</p>
+				<img src="images/picture21.png" alt="Picture 21">
+				<p>monkey</p>
+				<img src="images/picture22.png" alt="Picture 22">
+				<p>fish</p>
+				<img src="images/picture23.png" alt="Picture 23">
+				<p>cow</p>
+				<img src="images/picture24.png" alt="Picture 24">
+				<p>frog</p>
+				<img src="images/picture25.png" alt="Picture 25">
+				<p>bug</p>
+				<img src="images/picture26.png" alt="Picture 26">
+				<p>worm</p>
+			</div>
+			<div class="column" id="col5">
+				<img src="images/picture27.png" alt="Picture 27">
+				<p>on the moon</p>
+				<img src="images/picture28.png" alt="Picture 28">
+				<p>on the chair</p>
+				<img src="images/picture29.png" alt="Picture 29">
+				<p>in my spaghetti</p>
+				<img src="images/picture30.png" alt="Picture 30">
+				<p>in my soup</p>
+				<img src="images/picture31.png" alt="Picture 31">
+				<p>on the grass</p>
+				<img src="images/picture32.png" alt="Picture 32">
+				<p>in my shoes</p>
+			</div>
+		</div>
+
+		<!-- Right panel with buttons and speaker -->
+		<div class="right-panel">
+			<div class="buttons-row">
+				<button class="color-button" id="button1"></button>
+				<button class="color-button" id="button2"></button>
+				<button class="color-button" id="button3"></button>
+				<button class="color-button" id="button4"></button>
+				<button class="color-button" id="button5"></button>
+			</div>
+			<p id="storyOutput">Your story will appear here!</p>
+			<div class="speaker-section">
+				<div class="speaker"></div>
+				<button class="action-button" id="surprise">Surprises</button>
+				<button class="action-button" id="reset">Reset</button>
+				<button class="action-button" id="playback">Playback</button>
+			</div>
+		</div>
+	</div>
+	<!-- Page-level footer -->
+	<footer>
+		<p>&copy; See'N Say Story Maker - Site by Marcos Mota. Access my website for other projects: <a
+				href="https://www.marcosmota.tech" style="color: white;">marcosmota.tech</a></p>
+	</footer>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
