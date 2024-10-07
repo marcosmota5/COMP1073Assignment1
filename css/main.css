@@ -1,12 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.options {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.options a:hover {
+    background-color: #555;
+}
+
+main {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ensure the body takes full height of the viewport */
 }
 
 .container {
@@ -18,10 +69,16 @@ body {
     width: 70%;
     max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Left panel columns */
 .left-panel {
+    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -127,4 +184,28 @@ body {
 
 .action-button:hover {
     opacity: 0.9;
+}
+
+
+/* Footer style */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Material symbols */
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    color: white
 }
