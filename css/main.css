@@ -66,10 +66,10 @@ main {
     background-color: #ffffcc;
     border-radius: 10px;
     padding: 20px;
-    width: 70%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1400px;
+    margin-bottom: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -93,8 +93,8 @@ main {
 }
 
 .column img {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     margin: 5px 0;
 }
 
@@ -163,6 +163,7 @@ main {
     padding: 20px;
     background-color: #ffcc33;
     border-radius: 10px;
+  
 }
 
 .number-buttons-row {
@@ -221,7 +222,7 @@ main {
 
 .main-image {
     margin: 10px 0 10px 200px;
-    width: 300px;
+    width: 200px;
 }
 
 /* Speaker section */
@@ -301,7 +302,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+ 
     position: fixed;
     bottom: 0;
     width: 100%;
