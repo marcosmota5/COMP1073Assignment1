@@ -95,12 +95,62 @@ main {
 .column img {
     width: 50px;
     height: 50px;
+    margin: 5px 0;
 }
 
 .column p {
     text-align: center;
-    font-size: 14px;
     margin: 5px 0;
+}
+
+.column-number {
+    font-family: 'Cooper Black', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    display: inline-block;
+    color: black;
+}
+
+#col1 {
+    background-color: #9931B2;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#col2 {
+    background-color: #169ED3;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#col3 {
+    background-color: #83B601;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#col4 {
+    background-color: #E69B04;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#col5 {
+    background-color: #E33794;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /* Right panel with buttons and speaker */
@@ -109,48 +159,75 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 60%;
     padding: 20px;
     background-color: #ffcc33;
     border-radius: 10px;
 }
 
-.buttons-row {
+.number-buttons-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.color-button-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-button-text {
+    font-family: 'Cooper Black', sans-serif;
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
 .color-button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
     background-color: #ff5757;
     margin: 0 5px;
     cursor: pointer;
+    box-shadow:
+        inset 3px 3px 10px rgba(0, 0, 0, 0.3), 
+        inset -3px -3px 10px rgba(255, 255, 255, 0.7); 
+}
+
+.color-button:hover {
+    border: 2px solid black;
+}
+
+#button1 {
+    background-color: #9931B2;
 }
 
 #button2 {
-    background-color: #57a0ff;
+    background-color: #169ED3;
 }
 
 #button3 {
-    background-color: #57ff57;
+    background-color: #83B601;
 }
 
 #button4 {
-    background-color: #ffd457;
+    background-color: #E69B04;
 }
 
 #button5 {
-    background-color: #ff57d4;
+    background-color: #E33794;
+}
+
+.main-image {
+    margin: 10px 0 10px 200px;
+    width: 300px;
 }
 
 /* Speaker section */
-.speaker-section {
+.option-buttons-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-top: 30px;
 }
@@ -161,34 +238,65 @@ main {
     background-color: #666;
     border-radius: 50%;
     margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+.action-button-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
 }
 
 .action-button {
-    width: 100px;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #00cc66;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
     cursor: pointer;
+    box-shadow:
+        inset 3px 3px 10px rgba(0, 0, 0, 0.3), 
+        inset -3px -3px 10px rgba(255, 255, 255, 0.7); 
+}
+
+.action-button-text {
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
 }
 
 #surprise {
-    background-color: #ff5757;
+    background-color: #E41008;
 }
 
 #playback {
-    background-color: #57a0ff;
+    background-color: #08B18D;
+}
+
+#reset {
+    background-color: #56e403;
+}
+
+#surprise-text {
+    font-weight: bold;
+    color: #E41008;
+}
+
+#playback-text {
+    font-weight: bold;
+    color: #08B18D;
+}
+
+#reset-text {
+    font-weight: bold;
+    color: #347a0b;
 }
 
 .action-button:hover {
-    opacity: 0.9;
+    border: 2px solid black;
 }
 
 
 /* Footer style */
-
 footer {
     background-color: #333;
     color: #fff;

@@ -6,20 +6,21 @@
         Student Name: Marcos Oliveira Mota
         Created on: 2024-10-06
 -->
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
-    <meta name="author" content="Marcos Mota" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Marcos Mota" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-	
-    <!-- Google Fonts -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
@@ -48,6 +49,7 @@
 			<!-- Left panel with columns of images and text -->
 			<div class="left-panel">
 				<div class="column" id="col1">
+					<p class="column-number">1</p>
 					<img src="images/picture1.png" alt="Picture 1">
 					<p>The turkey</p>
 					<img src="images/picture2.png" alt="Picture 2">
@@ -64,6 +66,7 @@
 					<p>The cat</p>
 				</div>
 				<div class="column" id="col2">
+					<p class="column-number">2</p>
 					<img src="images/picture8.png" alt="Picture 8">
 					<p>sat on</p>
 					<img src="images/picture9.png" alt="Picture 9">
@@ -78,6 +81,7 @@
 					<p>kissed</p>
 				</div>
 				<div class="column" id="col3">
+					<p class="column-number">3</p>
 					<img src="images/picture14.png" alt="Picture 14">
 					<p>a funny</p>
 					<img src="images/picture15.png" alt="Picture 15">
@@ -92,6 +96,7 @@
 					<p>a fat</p>
 				</div>
 				<div class="column" id="col4">
+					<p class="column-number">4</p>
 					<img src="images/picture20.png" alt="Picture 20">
 					<p>goat</p>
 					<img src="images/picture21.png" alt="Picture 21">
@@ -108,6 +113,7 @@
 					<p>worm</p>
 				</div>
 				<div class="column" id="col5">
+					<p class="column-number">5</p>
 					<img src="images/picture27.png" alt="Picture 27">
 					<p>on the moon</p>
 					<img src="images/picture28.png" alt="Picture 28">
@@ -122,22 +128,51 @@
 					<p>in my shoes</p>
 				</div>
 			</div>
-	
+			<div class="mid-panel"></div>
+
 			<!-- Right panel with buttons and speaker -->
 			<div class="right-panel">
-				<div class="buttons-row">
-					<button class="color-button" id="button1"></button>
-					<button class="color-button" id="button2"></button>
-					<button class="color-button" id="button3"></button>
-					<button class="color-button" id="button4"></button>
-					<button class="color-button" id="button5"></button>
+				<div class="number-buttons-row">
+					<div class="color-button-section">
+						<span class="color-button-text">1</span>
+						<button class="color-button" id="button1"></button>
+					</div>
+					<div class="color-button-section">
+						<span class="color-button-text">2</span>
+						<button class="color-button" id="button2"></button>
+					</div>
+					<div class="color-button-section">
+						<span class="color-button-text">3</span>
+						<button class="color-button" id="button3"></button>
+					</div>
+					<div class="color-button-section">
+						<span class="color-button-text">4</span>
+						<button class="color-button" id="button4"></button>
+					</div>
+					<div class="color-button-section">
+						<span class="color-button-text">5</span>
+						<button class="color-button" id="button5"></button>
+					</div>
 				</div>
 				<p id="storyOutput">Your story will appear here!</p>
-				<div class="speaker-section">
-					<div class="speaker"></div>
-					<button class="action-button" id="surprise">Surprises</button>
-					<button class="action-button" id="reset">Reset</button>
-					<button class="action-button" id="playback">Playback</button>
+				<div class="image-row">
+					<img class="main-image" src="images/caterpillar-intelligent.png" alt="Caterpillar intelligent">
+				</div>
+				<div class="option-buttons-row">
+					<img class="speaker" id="speaker-normal" src="images/speaker.png" alt="Speaker">
+					<img class="speaker" id="speaker-playing" style="display: none;" src="images/speaker-playing.png" alt="Speaker">
+					<div class="action-button-section">
+						<button class="action-button" id="surprise"></button>
+						<span class="action-button-text" id="surprise-text">Surprises</span>
+					</div>
+					<div class="action-button-section">
+						<button class="action-button" id="playback"></button>
+						<span class="action-button-text" id="playback-text">Playback</span>
+					</div>
+					<div class="action-button-section">
+						<button class="action-button" id="reset"></button>
+						<span class="action-button-text" id="reset-text">Reset</span>
+					</div>
 				</div>
 			</div>
 		</div>

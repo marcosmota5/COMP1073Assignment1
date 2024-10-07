@@ -33,10 +33,24 @@ var array5 = ['on the moon', 'on the chair', 'in my spaghetti', 'in my soup', 'o
 /* Functions
 -------------------------------------------------- */
 function speakNow(string) {
-	// Create a new speech object, attaching the string of text to speak
-	var utterThis = new SpeechSynthesisUtterance(string);
-	// Actually speak the text
-	synth.speak(utterThis);
+    let speakerNormal = document.getElementById('speaker-normal');
+    let speakerPlaying = document.getElementById('speaker-playing');
+
+    // Show the speaker-playing icon and hide the speaker-normal icon at the beginning
+    speakerNormal.style.display = 'none';
+    speakerPlaying.style.display = 'block';
+
+    // Create a new speech object, attaching the string of text to speak
+    var utterThis = new SpeechSynthesisUtterance(string);
+
+    // When the speech synthesis finishes, hide the speaker-playing and show the speaker-normal icon
+    utterThis.onend = function() {
+        speakerPlaying.style.display = 'none';
+        speakerNormal.style.display = 'block';
+    };
+
+    // Speak the text
+    synth.speak(utterThis);
 }
 
 // Function to generate a random element from an array
